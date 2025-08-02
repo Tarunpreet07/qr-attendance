@@ -1,0 +1,133 @@
+/* App.css */
+
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f4f8;
+  color: #333;
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+/* Header or Navbar */
+header {
+  background-color: #1e90ff;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Page container */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Button & Links */
+button, .btn, a {
+  background-color: #1e90ff;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+button:hover, .btn:hover, a:hover {
+  background-color: #156fc2;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  margin: 12px 0;
+  padding: 14px 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Form Fields */
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* QR Scanner Box */
+.qr-box {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto 20px;
+  border: 2px dashed #1e90ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaf4ff;
+  border-radius: 10px;
+}
+
+/* Message Styling */
+.success-message {
+  color: green;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.error-message {
+  color: red;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1e90ff;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
