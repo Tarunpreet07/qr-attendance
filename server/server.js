@@ -11,14 +11,26 @@ connectDB();
 const app = express();
 app.use(cors());
 app.use(express.json());
-console.log('Loading auth route...');
-app.use('/api/auth', require('./routes/auth'));
+try {
+  console.log('Loading auth route...');
+  app.use('/api/auth', require('./routes/auth'));
+} catch (e) {
+  console.error('Error loading auth route', e);
+}
 
-console.log('Loading sessions route...');
-app.use('/api/sessions', require('./routes/session'));
+try {
+  console.log('Loading sessions route...');
+  app.use('/api/sessions', require('./routes/session'));
+} catch (e) {
+  console.error('Error loading sessions route', e);
+}
 
-console.log('Loading attendance route...');
-app.use('/api/attendance', require('./routes/attendance'));
+try {
+  console.log('Loading attendance route...');
+  app.use('/api/attendance', require('./routes/attendance'));
+} catch (e) {
+  console.error('Error loading attendance route', e);
+}
 
 
 const PORT = process.env.PORT || 5000;
