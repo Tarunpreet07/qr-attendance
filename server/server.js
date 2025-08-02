@@ -11,9 +11,13 @@ connectDB();
 const app = express();
 app.use(cors());
 app.use(express.json());
-
+console.log('Loading auth route...');
 app.use('/api/auth', require('./routes/auth'));
+
+console.log('Loading sessions route...');
 app.use('/api/sessions', require('./routes/session'));
+
+console.log('Loading attendance route...');
 app.use('/api/attendance', require('./routes/attendance'));
 
 if (process.env.NODE_ENV === 'production') {
